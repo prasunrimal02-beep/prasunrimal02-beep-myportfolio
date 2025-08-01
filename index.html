@@ -49,9 +49,9 @@
     y: 150,
     width: 40,
     height: 30,
-    gravity: 1.05,
-    lift: -14,
-    velocity: 0.5
+    gravity: 1.5,
+    lift: -18,
+    velocity: 0
   };
 
   const pipes = [];
@@ -93,7 +93,7 @@
     }
 
     pipes.forEach(pipe => {
-      pipe.x -= 2;
+      pipe.x -= 3;
 
       if (pipe.x + pipeWidth === bird.x) score++;
 
